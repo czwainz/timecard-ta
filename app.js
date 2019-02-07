@@ -87,6 +87,7 @@ function addHours1(index) {
     week1[index].hours += 1
   }
   drawCal1()
+  totalWeek1()
 }
 
 function deleteHours1(index) {
@@ -98,21 +99,19 @@ function deleteHours1(index) {
     week1[index].hours -= 1
   }
   drawCal1()
+  totalWeek1()
 }
 
 let total1 = 0;
 
 function totalWeek1() {
   for (let i = 0; i < week1.length; i++) {
-    const hours = week1[i];
-    total1 = hours.hours * 25
+    let hours = week1[i];
+    total1 += hours.hours * 25
     document.querySelector('#totalHours').innerHTML = `${hours.hours}`
-    debugger
   }
   document.querySelector('#totalCheck').innerHTML = `${total1}`
-  // drawTotal()
+  drawCal1()
 }
 totalWeek1()
 
-// function drawTotal() {
-// }
