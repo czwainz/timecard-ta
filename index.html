@@ -7,11 +7,33 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
     integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <style href="app.css"></style>
   <title>TimeCard</title>
 </head>
 
 <body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <h4>Hourly Wage: $25</h4>
+        <h4 class="message"><span>&nbsp;</span></h4>
+      </div>
+    </div>
+    <div class="row calendar my-2 justify-content-around d-flex"></div>
+    <div class="row calendar2 my-2 justify-content-around d-flex"></div>
+    <div class="row">
+      <div class="col-12 d-flex justify-content-end mt-3">
+        <h4>Total Hours: <span id="totalHours"></span></h4><br>
+        <h4>Total Paycheck: $<span id="totalCheck"></span></h4>
+      </div>
+    </div>
+  </div>
 
+
+
+  <script src="app.js"></script>
 </body>
 
 </html>
