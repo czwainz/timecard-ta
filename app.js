@@ -102,7 +102,7 @@ function deleteHours1(index) {
   totalWeek1()
 }
 
-let total1 = 0;
+let total1 = 0
 
 function totalWeek1() {
   for (let i = 0; i < week1.length; i++) {
@@ -112,6 +112,7 @@ function totalWeek1() {
   }
   document.querySelector('#totalCheck').innerHTML = `${total1}`
   drawCal1()
+
 }
 totalWeek1()
 
